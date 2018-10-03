@@ -1,0 +1,50 @@
+{
+
+    "manifest_version": 2,
+    "name": "FoxKarl",
+    "version": "0.1",
+    "applications": {
+        "gecko": {
+          "id": "FoxKarl@example.com"
+        }
+    },
+  
+    "description": "Fox Karl your browser butler",
+    "permissions": ["menus",
+                    "activeTab",
+                    "contextMenus",
+                    "tabs"],
+  
+    "icons": {
+      "48": "icons/foxkarl-48.png",
+      "96": "icons/foxkarl-96.png"
+    },
+
+    "commands": {
+        "previous-page": {
+          "suggested_key": {
+            "default": "Alt+Shift+Left"
+          }
+        },
+        "next-page": {
+          "suggested_key": {
+            "default": "Alt+Shift+Right"
+          }
+        },  
+        "previous-page-10": {
+          "suggested_key": {
+            "default": "Alt+Shift+Down"
+          }
+        },
+        "next-page-10": {
+          "suggested_key": {
+            "default": "Alt+Shift+Up"
+          }
+        }   
+    },
+
+    "background": {
+        "scripts": ["foxkarl_back.js"]
+    }
+    
+  }
